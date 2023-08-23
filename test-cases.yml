@@ -87,7 +87,7 @@
   prerequisites:
     Открыта главная страница https://hexlet-products-store.vercel.app/
   steps:
-    - В левой колонке отключает галочку "In Stock" 
+    - В левой колонке отключаем галочку "In Stock" 
   expected-result: |
     Пользователь видит все товары магазина 
 
