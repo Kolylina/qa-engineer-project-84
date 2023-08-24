@@ -82,3 +82,19 @@
      При выборе русского языка контент сайта отображается на русском языке
   actual-result: |
     Часть текста отображается на английском, часть на русском
+    Названия, описания и категории товаров не переведены
+
+- summary: |
+    В панели DevTools отображаются ошибки
+  environment: |
+    Google Chrome Версия 115.0.5790.102 (Официальная сборка), (x86_64)
+    macOC Monterey 12.6.3
+  steps-to-reproduce: |
+    1. Зайти на главную страницу сайта https://hexlet-products-store.vercel.app/
+    2. Перейти во вкладку "Network" или "Сеть" в DevTools
+    3. Обновить страницу
+  expected-result: |
+     В консоли браузера отсутствуют ошибки
+  actual-result: |
+    В консоли отображается ошибка 
+    GET https://site/static/css/random.css net::ERR_NAME_NOT_RESOLVED
