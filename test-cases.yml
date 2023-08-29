@@ -5,6 +5,8 @@
     Пользователь может просматривать товары в каталоге по страницам
   prerequisites: |
     Открыта главная страница https://hexlet-products-store.vercel.app/
+  test-data: |
+    empty
   steps:
     - Нажимаем кнопку "Next" над или под каталогом
     - Нажимаем кнопку "Previous" над или под каталогом
@@ -17,6 +19,8 @@
     При верном вводе ключевого слова в поиске пользователь должен увидеть подходящий товар
   prerequisites: |
     Открыта главная страница https://hexlet-products-store.vercel.app/
+  test-data: |
+    empty
   steps:
     - Нажимаем "Search" в левом верхнем углу в боковом меню
     - Вводим название существующего в интернет-магазине товара
@@ -29,6 +33,8 @@
     Сайт должен корректно обрабатывать длинные строки в поисковой строке
   prerequisites: |
     Открыта главная страница https://hexlet-products-store.vercel.app/
+  test-data: |
+    empty
   steps:
     - Нажимаем "Search" в левом верхнем углу в боковом меню
     - Вводим текст, состоящий из большого количества символов (например, 1000 символов)
@@ -41,6 +47,8 @@
     При выборе категории пользователь должен увидеть группу подходящих товаров
   prerequisites:
     Открыта главная страница https://hexlet-products-store.vercel.app/
+  test-data: |
+    empty
   steps:
     - Нажимаем "Category" в левом верхнем углу в боковом меню
     - Выбираем категорию "smartphones"
@@ -53,6 +61,8 @@
     При фильтрации цены пользователь должен увидеть группу подходящих товаров
   prerequisites:
     Открыта главная страница https://hexlet-products-store.vercel.app/
+  test-data: |
+    empty
   steps:
     - В левой колонке в фильтре "Price" вносим нижний порог цены, соответствующий стоимости со скидкой одного из товаров
   expected-result: |
@@ -64,6 +74,8 @@
     При фильтрации цены пользователь должен увидеть группу подходящих товаров
   prerequisites:
     Открыта главная страница https://hexlet-products-store.vercel.app/
+  test-data: |
+    empty
   steps:
     - В левой колонке в фильтре "Price" вносим верхний порог цены, соответствующий стоимости со скидкой одного из товаров
   expected-result: |
@@ -75,6 +87,8 @@
     При фильтрации по наличию пользователь должен увидеть группу подходящих товаров
   prerequisites:
     Открыта главная страница https://hexlet-products-store.vercel.app/
+  test-data: |
+    empty
   steps:
     - В левой колонке ставим галочку "In Stock" 
   expected-result: |
@@ -86,6 +100,8 @@
     При отсутствии фильтрации по наличию пользователь должен увидеть все товары магазина
   prerequisites:
     Открыта главная страница https://hexlet-products-store.vercel.app/
+  test-data: |
+    empty
   steps:
     - В левой колонке отключаем галочку "In Stock" 
   expected-result: |
@@ -97,6 +113,8 @@
     При выборе товара пользователь должен перейти на его карточку
   prerequisites:
     Открыта главная страница https://hexlet-products-store.vercel.app/
+  test-data: |
+    empty
   steps:
     - Выбираем один из товаров
   expected-result: |
@@ -109,6 +127,8 @@
   prerequisites:
     Открыта главная страница https://hexlet-products-store.vercel.app/
     Выбран один из товаров
+  test-data: |
+    empty
   steps:
     - Нажимаем на категорию товара над его названием
   expected-result: |
@@ -120,6 +140,8 @@
     При нажатии кнопки добавления товара пользователь должен увидеть его в корзине
   prerequisites: |
     Открыта главная страница https://hexlet-products-store.vercel.app/
+  test-data: |
+    empty
   steps:
     - Нажимаем кнопку "Add to cart" на одном из товаров
     - Нажимаем "Cart" в правом верхнем углу страницы
@@ -133,6 +155,8 @@
   prerequisites: |
     Открыта главная страница https://hexlet-products-store.vercel.app/
     В корзину добавлено два и более одинаковых товаров
+  test-data: |
+    empty
   steps:
     - Нажимаем "Cart" в правом верхнем углу страницы
   expected-result: |
@@ -145,6 +169,8 @@
   prerequisites: |
     Открыта главная страница https://hexlet-products-store.vercel.app/
     В корзину добавлено два и более разных наименований товаров
+  test-data: |
+    empty
   steps:
     - Нажимаем "Cart" в правом верхнем углу страницы
   expected-result: |
@@ -158,6 +184,8 @@
     Открыта главная страница https://hexlet-products-store.vercel.app/
     В корзину добавлено один и более товаров
     Открыта страница корзины
+  test-data: |
+    empty
   steps:
     - Обновляем страницу корзины
   expected-result: |
@@ -171,6 +199,8 @@
     Открыта главная страница https://hexlet-products-store.vercel.app/
     В корзину добавлено два и более товаров
     Открыта страница корзины
+  test-data: |
+    empty
   steps:
     - Нажимаем "Delete" рядом с товаром
   expected-result: |
@@ -184,6 +214,8 @@
     Открыта главная страница https://hexlet-products-store.vercel.app/
     В корзину добавлено один и более товаров
     Открыта страница корзины
+  test-data: |
+    empty
   steps:
     - Нажимаем "Checkout"
   expected-result: |
@@ -195,6 +227,8 @@
     Контент и элементы главной страницы корректно отображаются и функционируют на мобильном устройстве пользователя
   prerequisites: |
     Открыта главная страница https://hexlet-products-store.vercel.app/
+  test-data: |
+    empty
   steps:
     - Открываем консоль разработчика
     - Выбираем один из видов мобильных устройств
@@ -208,6 +242,8 @@
   prerequisites: |
     Открыта главная страница https://hexlet-products-store.vercel.app/
     Открыта карточка одного из товаров
+  test-data: |
+    empty
   steps:
     - Открываем консоль разработчика
     - Выбираем один из видов мобильных устройств
@@ -222,6 +258,8 @@
     Открыта главная страница https://hexlet-products-store.vercel.app/
     В корзину добавлено один и более товаров
     Открыта страница корзины
+  test-data: |
+    empty
   steps:
     - Открываем консоль разработчика
     - Выбираем один из видов мобильных устройств
@@ -234,6 +272,8 @@
     Контент сайта отображается на русском языке
   prerequisites: |
     Открыта главная страница https://hexlet-products-store.vercel.app/
+  test-data: |
+    empty
   steps:
     - Выбираем "Language" — "Russian"
     - Просматриваем главную страницу, карточку товара и корзину
@@ -246,6 +286,8 @@
     Сайт отображается одинаково для разных браузеров
   prerequisites: |
     На компьютере установлено как минимум два разных браузера
+  test-data: |
+    empty
   steps:
     - Открываем главную страницу https://hexlet-products-store.vercel.app/ на браузере 1
     - Просматриваем главную страницу, карточку товара и корзину
@@ -260,6 +302,8 @@
     Сайт должен корректно отправлять запросы на сервер и получать ответы без ошибок
   prerequisites: |
     В браузере доступны инструменты разработчика
+  test-data: |
+    empty
   steps:
     - Открываем главную страницу https://hexlet-products-store.vercel.app/
     - Переходим во вкладку "Network" или "Сеть" в DevTools
